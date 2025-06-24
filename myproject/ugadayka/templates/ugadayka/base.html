@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай-ка!</title>
+    <link rel="stylesheet" href="/static/ugadayka/css/style.css">
+</head>
+<body>
+    {% include 'ugadayka/header.html' %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'ugadayka/footer.html' %}
+    <script src="/static/ugadayka/js/script.js"></script>
+</body>
+</html>

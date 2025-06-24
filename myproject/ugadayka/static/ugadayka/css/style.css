@@ -1,0 +1,244 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Хедер */
+header {
+    background-color: #4a76a8;
+    color: white;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.vk-login {
+    background-color: #4a76a8;
+    border: 1px solid white;
+}
+
+/* Основное содержимое */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Футер */
+footer {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        display: inline-block;
+    }
+}
+
+/* Стили для формы входа */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #4a76a8;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a76a8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3a6698;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.vk-login-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.vk-login-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4a76a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.vk-login-button:hover {
+    background-color: #3a6698;
+}
+
+/* Игровые стили */
+.game-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.game-form {
+    margin-top: 20px;
+}
+
+.number-input {
+    width: 93%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #4a76a8;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.lucky-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a76a8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.lucky-button:hover {
+    background-color: #3a6698;
+    transform: translateY(-2px);
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.timer {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Добавляем новые стили */
+.reward {
+    background-color: rgba(255, 215, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px dashed #FFD700;
+}
+
+.reward strong {
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+.timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#countdown {
+    font-weight: bold;
+    color: #4a76a8;
+}
