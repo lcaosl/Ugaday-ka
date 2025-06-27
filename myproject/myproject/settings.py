@@ -9,11 +9,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()  # Загружает .env файл
 
 SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv('DEBUG', 'False') == 'False'
+#DEBUG = os.getenv('DEBUG', 'False') == 'TRUE'
 
 ALLOWED_HOSTS = ['localhost',
     '127.0.0.1',]
 
+#ALLOWED_HOSTS = ['ugaday-ka.ru', 'www.ugaday-ka.ru',]
 
 # Application definition
 
